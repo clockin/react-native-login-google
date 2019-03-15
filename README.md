@@ -245,7 +245,7 @@ These are useful when determining which kind of error has occured during sign in
 
 Example `userInfo` which is returned after successful sign in.
 
-```json
+```jsonc
 {
   idToken: string,
   accessToken: string | null,
