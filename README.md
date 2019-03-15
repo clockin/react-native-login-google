@@ -1,7 +1,7 @@
 ![React Native Google Sign In](img/header.png)
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/react-native-google-signin"><img src="https://badge.fury.io/js/react-native-google-signin.svg" alt="NPM Version"></a>
+  <a href="https://www.npmjs.com/package/react-native-login-google"><img src="https://badge.fury.io/js/react-native-login-google.svg" alt="NPM Version"></a>
 </p>
 
 ## Features
@@ -12,15 +12,9 @@
 - Promise-based JS API
 - Typings for TypeScript and Flow
 
-### Note
-
-If you use React Native < `v0.40` stick with `v0.8.1` (`npm install react-native-google-signin@0.8 --save`).
-
-If you use React Native < `v0.47` stick with `v0.10.0` (`npm install react-native-google-signin@0.10 --save`).
-
 ## Project setup and initialization
 
-`yarn add react-native-google-signin`
+`yarn add react-native-login-google`
 
 Then follow the [Android guide](docs/android-guide.md) and [iOS guide](docs/ios-guide.md)
 
@@ -31,7 +25,7 @@ Then follow the [Android guide](docs/android-guide.md) and [iOS guide](docs/ios-
 ![signin button](img/signin-button.png)
 
 ```js
-import { GoogleSignin, GoogleSigninButton } from 'react-native-google-signin';
+import { GoogleSignin, GoogleSigninButton } from 'react-native-login-google';
 
 render() {
   <GoogleSigninButton
@@ -73,7 +67,7 @@ Handler to be called when the user taps the button
 ### 2. GoogleSignin
 
 ```js
-import { GoogleSignin, GoogleSigninButton, statusCodes } from 'react-native-google-signin';
+import { GoogleSignin, GoogleSigninButton, statusCodes } from 'react-native-login-google';
 ```
 
 #### `configure(options)`
@@ -83,7 +77,7 @@ It is mandatory to call this method before attempting to call `signIn()` and `si
 Example usage with for default options: you get user email and basic profile info.
 
 ```js
-import { GoogleSignin } from 'react-native-google-signin';
+import { GoogleSignin } from 'react-native-login-google';
 
 GoogleSignin.configure();
 ```
@@ -109,7 +103,7 @@ Prompts a modal to let the user sign in into your application. Resolved promise 
 
 ```js
 // import statusCodes along with GoogleSignin
-import { GoogleSignin, statusCodes } from 'react-native-google-signin';
+import { GoogleSignin, statusCodes } from 'react-native-login-google';
 
 // Somewhere in your code
 signIn = async () => {
@@ -251,7 +245,7 @@ These are useful when determining which kind of error has occured during sign in
 
 Example `userInfo` which is returned after successful sign in.
 
-```
+```json
 {
   idToken: string,
   accessToken: string | null,
@@ -269,7 +263,7 @@ Example `userInfo` which is returned after successful sign in.
 }
 ```
 
-## Want to contribute?
+## Want to contribute
 
 Check out the [contributor guide](docs/CONTRIBUTING.md)!
 
