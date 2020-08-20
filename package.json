@@ -1,6 +1,6 @@
 {
   "name": "react-native-login-google",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Google Signin for your react native applications",
   "main": "index.js",
   "types": "index.d.ts",
@@ -30,13 +30,13 @@
     "ios",
     "android"
   ],
-  "homepage": "https://github.com/clockin/react-native-login-google",
+  "homepage": "https://github.com/justjavac/react-native-login-google",
   "repository": {
     "type": "git",
-    "url": "https://github.com/clockin/react-native-login-google"
+    "url": "https://github.com/justjavac/react-native-login-google"
   },
   "bugs": {
-    "url": "https://github.com/clockin/react-native-login-google/issues"
+    "url": "https://github.com/justjavac/react-native-login-google/issues"
   },
   "peerDependencies": {
     "prop-types": "^15.5.10",
